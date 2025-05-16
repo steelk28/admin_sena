@@ -4,7 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class apprentice extends Model
+class Apprentice extends Model
 {
-    //
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
+    public function computer()
+    {
+        return $this->belongsTo(Computer::class);
+    }
+    'App\Models\Apprentice'
 }
