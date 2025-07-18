@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Apprentice extends Model
 {
+    protected $fillable = ['name', 'email', 'cell_number', 'course_id', 'computer_id'];
+    
     public function course()
     {
         return $this->belongsTo(Course::class);
@@ -14,5 +16,4 @@ class Apprentice extends Model
     {
         return $this->belongsTo(Computer::class);
     }
-    'App\Models\Apprentice'
 }

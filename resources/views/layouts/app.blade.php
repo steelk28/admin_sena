@@ -8,6 +8,6 @@
 </head>
 <body>
     @include('includes.navbar')
-    @yield('xd')
+    @yield('contenido')
 </body>
 </html>
